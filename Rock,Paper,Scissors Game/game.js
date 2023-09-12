@@ -1,4 +1,3 @@
-// Your First Interactive Game
 let playGame = confirm("Shall we play rock, paper, or scissors?");
 if (playGame) {
   //play
@@ -33,6 +32,9 @@ if (playGame) {
       playAgain ? location.reload() : alert("Ok, thanks for playing.");
     } else {
       alert("You didn't enter rock, paper, or scissors.");
+      alert(result);
+      let playAgain = confirm("Play Again?");
+      playAgain ? location.reload() : alert("Ok, thanks for playing.");
     }
   } else {
     alert("I guess you changed your mind. Maybe next time.");
