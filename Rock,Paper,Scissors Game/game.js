@@ -32,9 +32,7 @@ if (playGame) {
       playAgain ? location.reload() : alert("Ok, thanks for playing.");
     } else {
       alert("You didn't enter rock, paper, or scissors.");
-      alert(result);
-      let playAgain = confirm("Play Again?");
-      playAgain ? location.reload() : alert("Ok, thanks for playing.");
+      location.reload();
     }
   } else {
     alert("I guess you changed your mind. Maybe next time.");
